@@ -1,0 +1,57 @@
+.parent {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 15pt;
+  color: green;
+  animation-duration: 1s;
+  animation-name: myText;
+  animation-iteration-count: infinite;
+}
+
+.child {
+  border: 1px solid green;
+  height: 40px;
+  width: 500px;
+  margin: 20px;
+  border-left: 0px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.box {
+  height: 41px;
+  width: 501px;
+  border-radius: 20px;
+  background-color: green;
+  animation-duration: 7s;
+  animation-name: myBox;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myText {
+  0% {
+    color: green;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes myBox {
+  0% {
+    margin-right: 100%;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
+

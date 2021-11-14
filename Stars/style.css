@@ -1,0 +1,17 @@
+.parent {
+  height: 150px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.parent div {
+  height: 150px;
+  width: 150px;
+  background-image: url('./jpg/star-white.jpg');
+  background-size: 100%;
+}
+
+.parent div:hover, div:hover~ div {
+  background-image: url('./jpg/star-black.jpg'); 
+}
